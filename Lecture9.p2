@@ -1,0 +1,47 @@
+package polymorphism;
+
+//METHOD OVERRIDING :
+
+
+class A{
+	void fun() //overridden method
+	{
+		System.out.println("Hi i am A");
+	}
+}
+class B extends A{
+	void fun()//overriding method
+	{
+		System.out.println("Hi i am B");
+	}
+	
+}
+//----------------------------------------------------
+
+METHOD OVERLOADING :
+
+
+class demo{
+	void play(){
+		System.out.println("I have no parameters");
+		
+	}
+}
+class mode extends demo{
+	void play(int a) {
+		System.out.println(a);
+	}
+}
+//--------------------------------------------------------------------------------
+public class method_overriding {
+	public static void main(String[] args) {
+		B b = new B();
+		b.fun();
+
+
+		mode m= new mode();
+		m.play(6);
+
+	}
+
+}
